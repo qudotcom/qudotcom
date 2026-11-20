@@ -34,6 +34,7 @@ I care about root-cause modelling and rigorous out-of-sample validation: define 
 | Project | What it does | Stack |
 |---|---|---|
 | [**Zelig — tourism-ai**](https://github.com/qudotcom/tourism-ai) | Hybrid RAG platform for tourism in Morocco: grounded answers over a curated knowledge base, persistent memory, live safety agent; REST API, Dockerized | HuggingFace · Gemini · ChromaDB · FastAPI · React |
+| [**macaroon-app**](https://github.com/qudotcom/macaroon-app) | Offline-first journaling companion running an **on-device LLM** (llama.cpp via JNI on Android); AES-GCM encrypted backups, EN/FR/AR with RTL, 1,200+ tests | JavaScript · Capacitor · Kotlin · C++ |
 | [**job-shop-scheduler**](https://github.com/qudotcom/job-shop-scheduler) · [demo](https://jsp-eta.vercel.app) | Exact **CP-SAT** model combined with a **genetic algorithm**; reaches optimal solutions on the FT06 and FT10 benchmarks, with interactive Gantt charts | OR-Tools · Flask · Plotly |
 | [**QLP-SOLVER**](https://github.com/qudotcom/QLP-SOLVER) · [demo](https://qlp-solver.vercel.app) | Quantum linear solvers (**HHL, VQLS, adiabatic**) for elasticity problems, benchmarked live against a classical LU solver | Qiskit · FastAPI · Docker |
 | [**exovision-ai**](https://github.com/qudotcom/exovision-ai) | Hackathon MVP that classifies Kepler exoplanet candidates and lets users fine-tune the model on their own labelled data | LightGBM · Flask |
