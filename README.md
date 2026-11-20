@@ -17,7 +17,7 @@ I build and evaluate ML systems end to end: **LLM agents and RAG**, **time-serie
 
 | | |
 |---|---|
-| 📈 **Forecasting** | GDP **nowcasting** at the Central Bank of Morocco (Reservoir Computing RNN, **+25% accuracy** over statistical baselines) and a **leakage-safe backtesting engine** evaluated out of sample across 121 cohorts ([SSRN preprint](https://ssrn.com/abstract=7677118)) |
+| 📈 **Forecasting** | [**Timestral vs RTE**](https://github.com/qudotcom/timestral-vs-rte): Mistral's Timestral beats the French grid operator's official day-ahead demand forecast (**808 vs 1,216 MW MAE**) in a pre-registered backtest on ClickHouse. Also GDP **nowcasting** at the Central Bank of Morocco (Reservoir Computing RNN, **+25% accuracy** over statistical baselines) and a **leakage-safe backtesting engine** evaluated out of sample across 121 cohorts ([SSRN preprint](https://ssrn.com/abstract=7677118)) |
 | 🤖 **LLM apps & agents** | Hybrid **RAG** with persistent memory and a live monitoring agent ([Zelig](https://github.com/qudotcom/tourism-ai)), and **on-device LLM inference** with llama.cpp on Android ([Macaroon](https://github.com/qudotcom/macaroon-app)) |
 | 🗣️ **Multilingual NLP** | Owned the **Moroccan Darija** component of a production voice-AI system: heavy code-switching and no standard spelling |
 | 🧮 **Optimization** | CP-SAT combined with genetic algorithms, **optimal on the FT06/FT10** job-shop benchmarks ([live demo](https://jsp-eta.vercel.app)) |
@@ -43,6 +43,7 @@ I build and evaluate ML systems end to end: **LLM agents and RAG**, **time-serie
 
 | Project | What it does | Stack |
 |---|---|---|
+| [**timestral-vs-rte**](https://github.com/qudotcom/timestral-vs-rte) | Day-ahead French electricity demand: **Mistral Timestral** (zero-shot, CPU) vs **RTE's official J-1 forecast**. Pre-registered protocol, leakage-safe contexts queried from **ClickHouse**, SQL metrics, live next-day forecast, Mistral operator brief traced in **Langfuse** | Timestral · ClickHouse/chDB · Langfuse · Mistral API · pandas |
 | [**Zelig: tourism-ai**](https://github.com/qudotcom/tourism-ai) | Hybrid RAG assistant: grounded answers over a curated knowledge base, persistent vector memory, and a live news-monitoring safety agent with risk scoring. REST API, Dockerized | LangChain · HuggingFace · Gemini · ChromaDB · FastAPI · React |
 | [**macaroon-app**](https://github.com/qudotcom/macaroon-app) | Offline-first companion running an **on-device LLM** (llama.cpp via JNI on Android). AES-GCM encrypted backups, EN/FR/AR with RTL, 1,200+ tests | JavaScript · Capacitor · Kotlin · C++ |
 | [**job-shop-scheduler**](https://github.com/qudotcom/job-shop-scheduler) · [demo](https://jsp-eta.vercel.app) | Exact **CP-SAT** model combined with a **genetic algorithm**: optimal on FT06 and FT10, with interactive Gantt charts | OR-Tools · Flask · Plotly |
