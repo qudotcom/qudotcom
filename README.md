@@ -54,7 +54,7 @@ I build and evaluate ML systems end to end: **LLM agents and RAG**, **time-serie
 
 ### 📄 Publications
 
-- **Systematic strategy backtesting and validation framework**: a reproducible Python backtesting engine with explicit data-leakage protection and out-of-sample evaluation across 121 cohorts. Preprint on [SSRN](https://ssrn.com/abstract=7677118); submitted to the *Journal of Asset Management*.
+- **Systematic strategy backtesting and validation framework**: a reproducible Python backtesting engine with explicit data-leakage protection and out-of-sample evaluation across 121 cohorts. Preprint on [SSRN](https://ssrn.com/abstract=7677118).
 
 ### 🛠️ Skills
 
